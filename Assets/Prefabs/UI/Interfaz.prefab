@@ -6031,8 +6031,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   feedbackText: {fileID: 6901700047004616247}
-  displayDuration: 2
-  fadeDuration: 1
+  displayDuration: 1
+  fadeDuration: 0.5
 --- !u!1 &3707978738042600303
 GameObject:
   m_ObjectHideFlags: 0
