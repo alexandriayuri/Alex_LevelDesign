@@ -351,7 +351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &173722973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -793,7 +793,8 @@ GameObject:
   - component: {fileID: 559550189}
   - component: {fileID: 559550193}
   - component: {fileID: 559550192}
-  - component: {fileID: 559550191}
+  - component: {fileID: 559550195}
+  - component: {fileID: 559550194}
   m_Layer: 0
   m_Name: PuertaCerrada_Collider
   m_TagString: Untagged
@@ -816,24 +817,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 550365909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &559550191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559550188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a519537fdd4aea47bc02a63a1d75026, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectName: puertaCerrada
-  displayText:
-  - La puerta esta cerrada
-  sprite: {fileID: 1123995761, guid: 63f1de042456e59468a6766f1cea2c3b, type: 3}
-  quantity: 1
-  objectType: 4
 --- !u!61 &559550192
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -931,6 +914,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &559550194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559550188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a519537fdd4aea47bc02a63a1d75026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: 
+  displayText:
+  - "La puerta est\xE1 cerrada..."
+  sprite: {fileID: 0}
+  quantity: 1
+  objectType: 0
+--- !u!114 &559550195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559550188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a27101fd14ed4fa4fa179005a09f470b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 1
+  lockID: 0
+  isPhysicalLock: 0
+  inventory: {fileID: 1684904970}
+  feedbackText: {fileID: 6973665184144531453}
 --- !u!1 &617294803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,12 +1123,12 @@ GameObject:
   - component: {fileID: 690355920}
   - component: {fileID: 690355921}
   m_Layer: 6
-  m_Name: Window_Open
+  m_Name: Window_Broken
   m_TagString: Open Container
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &690355919
 Transform:
   m_ObjectHideFlags: 0
@@ -2235,7 +2253,7 @@ GameObject:
   - component: {fileID: 1665301430}
   - component: {fileID: 1665301431}
   m_Layer: 0
-  m_Name: Window_Broken
+  m_Name: Window_Closed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2385,9 +2403,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   requiredItems:
-  - metalpipe
+  - metalPipe
   inventory: {fileID: 1684904970}
   dependencyMetSprite:
+  - {fileID: 1123995761, guid: 63f1de042456e59468a6766f1cea2c3b, type: 3}
   - {fileID: 597856336, guid: 802d52620cf83c84e962a0c355683fcf, type: 3}
   feedbackText: {fileID: 6973665184144531453}
   dependencyMet: 
@@ -2519,7 +2538,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1840554811
 MonoBehaviour:
   m_ObjectHideFlags: 0
