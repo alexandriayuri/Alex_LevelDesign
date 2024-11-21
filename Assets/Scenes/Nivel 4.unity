@@ -2387,6 +2387,7 @@ MonoBehaviour:
   displayText:
   - "...Creo que puedo entrar por aqu\xED"
   - "\xA1Ahora puedo entrar!"
+  - "\xA1Ahora puedo entrar!"
   sprite: {fileID: 1123995761, guid: 63f1de042456e59468a6766f1cea2c3b, type: 3}
   quantity: 1
   objectType: 3
